@@ -4,7 +4,7 @@ $$
     f(n) = n^2 
 $$
 
-Gọi $square[i]$ là bình phương của $i$ và $n$ là kích thước ô vuông nhỏ nhất có số $K$.
+Gọi $square[i]$ là mảng chứa giá trị của $f[i]$ của $i$ và $n$ là kích thước ô vuông nhỏ nhất có số $K$.
 Ta dễ dàng có được $n$ bằng cách tìm kiếm nhị phân trên mảng $square$.
 
 Nhận thấy, số $K$ chỉ có thể xuất hiện ở bìa của ô vuông kích thước $n$ nên tọa độ của $K$ chỉ có 2 trường hợp
