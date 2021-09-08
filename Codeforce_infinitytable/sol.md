@@ -13,3 +13,6 @@ $$
                 (n,2\times n - k + square[n-1]),& \text {if }{(k - square[n-1]  > n)}\\ 
                 (k - square[n-1], n),& \text{    } {otherwise} \end{cases}
 $$
+
+
+Độ phức tạp thuật toán sẽ là $O(Q.Log(K))$.
