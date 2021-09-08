@@ -15,4 +15,4 @@ $$
 $$
 
 
-Độ phức tạp thuật toán sẽ là $O(Q.Log(K))$.
+Độ phức tạp thuật toán sẽ là $O(Q.Log(K))$
