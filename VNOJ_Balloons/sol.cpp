@@ -1,21 +1,47 @@
-/*
-    author:    Newplayers12
-    created:   Wednesday 08-09-2021  18:10:53
-*/
 #include <bits/stdc++.h>
+
 using namespace std;
-#define DEBUG(X) { auto _X = (X); cerr << "L" << __LINE__ << ": " << #X << " = " << (_X) << endl; }
+const int MXN = 2e5;
+const int MXK = 200;
 
-#define _Phuong ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0)
-
-int main()
-{
-    _Phuong;
-    int n;
-    cin >> n;
-    cout << n;
+int main(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int n, m, k;
+    cin >> n >> m >> k;
+    vector<long long> dp(n);
     vector<int> a(n);
-    for(int &x:a) cin >> x;
-    for(int x:a) cout << x << ' ';
+    for(int i = 0; i < n; ++i){
+        cin >> dp[i];
+        a[i] = dp[i];
+    }
+    for(int rounds = 2; rounds <= k; ++rounds){
+        vector<long long> tmp(n);
+        deque<pair<long long, int>> q;
+        // q.front() == Max in the range [max(0, i - M), i - 1]
+        int head = 0;
+        for(int i = 0; i < n; ++ i ){
+            if (i >= rounds - 1)
+                tmp[i] = a[i] * 1LL * (rounds) + (q.empty() ? 0 : q.front().first);
+
+
+            while (q.empty() == false && q.front().second <= i - m){
+                q.pop_front();
+            }
+            while (q.empty() == false && dp[i] > q.back().first){
+                q.pop_back();
+            }
+            q.push_back({dp[i], i});
+
+        }
+        swap(tmp, dp);
+    }
+    long long ans = 0;
+    for(int i = 0; i < n; ++i ){
+        ans = max(ans, dp[i]);
+    }
+    
+    cout << ans;
+
     return 0;
 }
