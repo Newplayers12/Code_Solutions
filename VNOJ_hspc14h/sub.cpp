@@ -5,10 +5,10 @@ cho mảng A có N số nguyên
 
 với K là điểm chia mảng thành hai phần sao cho 
 	tổng giá trị tuyệt đối của số âm trong A[0:K]
-  + tổng giá trị tuyệt đối của số dương trong A[K:N] 
+      + tổng giá trị tuyệt đối của số dương trong A[K:N] 
 là cực đại
 
-tìm giá trị cực đại đó
+tìm giá trị cực đại đó 
 */
 
 #include <iostream>
