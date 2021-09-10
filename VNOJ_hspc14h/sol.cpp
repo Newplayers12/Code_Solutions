@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-// see subproblem for more information
+// see subproblem for more information 
 const int N = 1507;
 int m, n, mat[N][N], dpn[N][N], dpp[N][N];
 
