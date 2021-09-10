@@ -4,7 +4,9 @@
 
 Thật ra thì bài toán này chỉ là một bài toán QHĐ bình thường thôi <(").
 
-Ta gọi một hàm $dp[u][j] = u \times A[j] + \max(dp[u-1][v] | \forall v, j - M \le v \le j - 1)$
+Ta gọi hàm $dp[u][j]$ là tổng lớn nhất của dãy đã chọn $u$ vật và vật cuối cùng được chọn là vật thứ $j$. Như vậy ta có công thức như sau:
+
+$$dp[u][j] = u \times A[j] + \max(dp[u-1][v] | \forall v, j - M \le v \le j - 1)$$
 
 Đáp án cuối cùng chính là $\max(dp[K][i]) \forall i \in [K; N]$
 
