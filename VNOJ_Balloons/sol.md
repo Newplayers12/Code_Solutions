@@ -13,10 +13,10 @@ Nhưng mà thực tế thì không đơn giản như vậy, do là mình thấy 
 Ta có thể cải tiến nó hơn ở phần tìm max do là chúng ta đang tìm chính là max trên một đoạn tịnh tiến, như vậy có thể áp dụng deque để quản lý nhanh trong $O(1)$. Như vậy độ phức sẽ giảm xuống còn là $O(N\times K)$.
 
 
-
-# Solution
-<!-- sau đó thì ghi thêm vào trong đây -->
-
 # Độ phức tạp thời gian
+- $O(N \times M \times K)$ nếu không có cải tiến.
+- $O(N \times K)$ khi có cải tiến bằng deque trên đoạn tịnh tiến.
 
 # Notes
+- Theo như anh Thoại và Đạt nói thì là bài toán này dùng mảng hai chiều $O(N \times K)$ vẫn không TLE. Nhưng trong code của anh để thì là cải tiến hơn nữa về không gian bộ nhớ nên là $O(N)$.
+- Có gì muốn xem thử code anh Thoại thì nói cũng được.
