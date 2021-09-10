@@ -32,7 +32,8 @@ int main() {
 		for (int j = 1; j <= n; j++) {
 			string cell; cin >> cell;
 			int v = stoi(cell.substr(1, cell.length() - 1));
-			//
+			// apple: 	Ax --> +x
+			// banana:	Bx --> -x
 			if (cell.at(0) == 'A') {
 				f[i][j] = v;
 			} else {
