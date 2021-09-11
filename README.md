@@ -2,15 +2,6 @@
 Code solutions for some homework
 mỗi tuần thì chắc là sẽ update trong đây, mỗi bài chắc là sẽ có thể nhận thêm solution của mấy em nếu mà có đáp án hoặc là ý tưởng hay :V
 
-<<<<<<< Updated upstream
-# Tóm tắt tên
-
-Codeforces = CF
-
-VNOI = VNOJ
-=======
-
-## Shorten word
-+ Codeforces &rarr; CF
-+ VNOJ &rarr; VNOJ
->>>>>>> Stashed changes
+## Viết tắt
++ Codeforces = CF
++ VNOJ = VNOJ
