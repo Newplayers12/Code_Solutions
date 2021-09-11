@@ -10,7 +10,7 @@ Vì giá trị của $A$ là bất kì mà yêu cầu bài toán là số lượ
 Gọi $f[i]$ là số dãy tăng nghiêm ngặt có giá trị cuối cùng là $i$, $cnt[i]$ là số lượng phần tử giống nhau trong $A$.
 
 $$
-f[i] = \begin{cases} f[i-1], &\text{ previous}\\ f[i-1] * cnt[i], &\text{add i}
+f[i] = \begin{cases} f[i-1], &\text{Nếu không chọn vật i}\\ f[i-1] * cnt[i], &\text{Nếu chọn vật i}
 \end{cases}
 $$
 

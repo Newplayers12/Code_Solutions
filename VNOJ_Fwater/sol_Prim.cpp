@@ -15,6 +15,7 @@ const int INF = 1e9;
 void Prim(int start){
 	bool flag[MXN];
 	memset(flag, false, sizeof(flag));
+    
 	for(int i = 0; i <= n; ++i){
 		dist[i] = INF;
 	}
