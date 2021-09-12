@@ -30,7 +30,8 @@ int main() {
 	for (; i < n; i++) {
 		if (a[i].nd != a[i-1].nd) break;
 	}
-	pre[a[i].nd] = a[i].st; pre[a[i-1].nd] = a[i-1].st;
+	pre[a[i].nd] = a[i].st; 
+	pre[a[i-1].nd] = a[i-1].st;
 	//
 	int res = I, cnt = 0;
 	for (; i < n; i++) {
