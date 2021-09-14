@@ -1,5 +1,10 @@
 #include <iostream>
 #include <algorithm>
+#include <math.h>
+#include <algorithm>
+#include <functional>
+#include <cmath>
+
 using namespace std;
 
 #define pi pair<int, bool>
@@ -45,6 +50,6 @@ int main() {
 		pre[a[i].nd] = a[i].st;
 	}
 	//
-	cout << res + abs(c1 - c2) << " " << cnt << "\n";
+	cout << res + abs((c1 - c2)) << " " << cnt << "\n";
 	return 0;
 }
