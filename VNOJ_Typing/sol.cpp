@@ -5,8 +5,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define fastio ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0)
-
+#define fastio                        \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(0);                       \
+    cout.tie(0)
 
 const long long mod = 1e9 + 7;
 
@@ -18,10 +20,14 @@ int main()
     int len = 0;
     char last = s[0];
     long long ans = 1;
-    for(int i = 0; i < (int) s.length(); ++i){
-        if (s[i] == last){
+    for (int i = 0; i < (int)s.length(); ++i)
+    {
+        if (s[i] == last)
+        {
             len++;
-        } else {
+        }
+        else
+        {
             ans = (ans * len) % mod;
             len = 1;
             last = s[i];
