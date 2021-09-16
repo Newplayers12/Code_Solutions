@@ -21,3 +21,9 @@ Như vậy chúng ta sẽ tiến hành tìm kiếm nhị phân (TKNP) cho $T_1$ 
 $O((N + M) \times \log(T))$ với $N, M$ lần lượt là độ dài của mảng 1 và 2.
 # Notes
 Ngoài ra chúng ta cũng nên lưu ý là số lượng sản phẩm làm được ở mỗi phân xưởng có thể lên đến $N \times T$ dẫn đến là tràn số nếu mà lưu ở kiểu dữ liệu int.
+
+```
+Newplayers12:
+- Mấy em thử nghĩ theo việc nếu mà chặt nhị phân (hoặc gọi là tìm kiếm nhị phân) theo số lượng sản phẩm của xưởng 1 và 2 thì sao <("). 
+- Khi đó thì nó sẽ dễ hơn hoặc là khó hơn so với chặt theo thời gian T này không?
+```
