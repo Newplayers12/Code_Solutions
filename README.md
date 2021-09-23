@@ -5,3 +5,5 @@ mỗi tuần thì chắc là sẽ update trong đây, mỗi bài chắc là sẽ
 ## Viết tắt
 + Codeforces = CF
 + VNOJ = VNOJ
++ Atcoder = AtC
+
