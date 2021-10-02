@@ -1,3 +1,13 @@
+
+/*
+author:		iluvgirlswithglasses 
+github: 	https://github.com/iluvgirlswithglasses 
+created:	untracked
+tab-width:	4 spaces
+
+I sexually identify myself as an Attack Helicopter
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -10,6 +20,7 @@ void calc() {
 		s += "()";
 	for (int i = 1; i <= n; i++) {
 		cout << s << "\n";
+		// dời ngoặc cuối vào trong
 		s = s.substr(0, i) + s.substr(len-2, 2) + s.substr(i, len-2-i);
 	}
 }
