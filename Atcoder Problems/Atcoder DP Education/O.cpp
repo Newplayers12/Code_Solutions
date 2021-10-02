@@ -19,19 +19,22 @@ int main()
             cin >> can[i][j];
         }
     }
-    vector<int> dp[25];
+
+    vector<int> dp[25]; // dp[i][S] 
     for(int i = 0; i < 25; ++i){
         dp[i].assign((1<<n), 0);
     }
 
 
+    // O(n * n * 2^n)
+    
     dp[0][0] = 1; // trường hợp base, không xét nam nào và bitmask rỗng sẽ coi như là một cách.
     for(int i = 1; i <= n; ++i){
         for(int m = 0; m < (1<<n); ++m){
-            int cnt = __builtin_popcount(m);
+            int cnt = __builtin_popcount(m); // đếm số nữ đã được ghép cặp.
             if (cnt >= i) continue; // số lượng gái được ghép cặp phải < chỉ số nam đang xét.
             for(int girl = 0; girl < n; ++girl){
-                if (can[i - 1][girl] && !(m & (1 << girl))){
+                if (can[i - 1][girl] && !(m & (1 << girl)) ){
                     int &res = dp[i][m ^ (1<<girl)];
                     res = (res + dp[i-1][m]) % mod;
                 }
