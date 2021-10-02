@@ -4,6 +4,9 @@ using namespace std;
 
 #define ll long long
 
+// ý tưởng là đề chỉ yêu cầu in n biểu thức khác nhau
+// vậy thì chúng ta có thể in ra các biểu thức có k cặp lồng vào nhau -> cho k chạy từ 1 đến n.
+// với các cặp thừa thì chỉ là in ra () cho đủ.
 
 int main(){
     ios_base::sync_with_stdio(0);
