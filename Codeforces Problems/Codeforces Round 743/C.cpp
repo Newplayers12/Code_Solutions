@@ -1,4 +1,13 @@
-// của iluvgirlswithglasses
+
+/*
+author:		iluvgirlswithglasses 
+github: 	https://github.com/iluvgirlswithglasses 
+created:	untracked
+tab-width:	4 spaces
+
+I sexually identify myself as an Attack Helicopter
+*/
+
 /*
 một cách làm đến từ editorial
 rất bá đạo

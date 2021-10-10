@@ -1,3 +1,13 @@
+
+/*
+author:		iluvgirlswithglasses 
+github: 	https://github.com/iluvgirlswithglasses 
+created:	untracked
+tab-width:	4 spaces
+
+I sexually identify myself as an Attack Helicopter
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
