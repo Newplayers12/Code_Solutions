@@ -67,8 +67,8 @@ int main()
     for(int i = 0; i < n; ++i){
         int u;
         cin >> u;
-        vector<int> temp = {u - i, u + i};
-        st.setv(i, temp, 0, 0, st.size);
+       
+        st.setv(i, (vector<int>){u - i, u + i}, 0, 0, st.size);
     }
     
     while(q --){
